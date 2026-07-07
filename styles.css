@@ -145,6 +145,20 @@ ul {
     width: 100%;
 }
 
+.btn-poll-reset {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    margin-top: 0.75rem;
+}
+
+.btn-poll-reset:hover {
+    background: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+
 /* ==========================================================================
    Header Navigation Styles
    ========================================================================== */
