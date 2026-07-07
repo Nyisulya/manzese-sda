@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzese Seventh-day Adventist Church</title>
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="sda-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="55" r="30" stroke="var(--gold-color)" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M50 15 V85 M30 38 H70" stroke="var(--gold-color)" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M25 65 C35 60 50 63 50 68 C50 63 65 60 75 65 V45 C65 40 50 43 50 48 C50 43 35 40 25 45 Z" fill="var(--primary-color)" stroke="var(--gold-color)" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M50 15 C55 25 62 30 60 38 C58 45 50 48 50 48 C50 48 42 45 40 38 C38 30 45 25 50 15 Z" fill="url(#flameGrad)" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="flameGrad" x1="50" y1="15" x2="50" y2="48" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#EEB902" />
+                            <stop offset="100%" stop-color="#F39C12" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="church-title">MANZESE</span>
+                    <span class="church-sub" data-translate="nav_sda">Seventh-day Adventist Church</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item" data-translate="nav_home">Nyumbani</a>
+                <a href="about.html" class="nav-item" data-translate="nav_about">Kuhusu Sisi</a>
+                <a href="departments.html" class="nav-item" data-translate="nav_departments">Idara</a>
+                <a href="quiz.html" class="nav-item" data-translate="nav_quiz">Chemsha Bongo</a>
+                <a href="giving.html" class="nav-item" data-translate="nav_giving">Kutoa</a>
+                <a href="events.html" class="nav-item" data-translate="nav_services">Ratiba & Matukio</a>
+                <a href="gallery.html" class="nav-item" data-translate="nav_gallery">Picha</a>
+                <a href="contact.html" class="nav-item" data-translate="nav_contact">Wasiliana Nasi</a>
+            </nav>
+
+            <!-- Language Switch & Mobile Toggle -->
+            <div class="header-actions">
+                <button class="lang-btn" id="langBtn" aria-label="Switch Language">
+                    <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span id="langText">ENGLISH</span>
+                </button>
+
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Panel (Overlay) -->
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-item" data-translate="nav_home">Nyumbani</a>
+            <a href="about.html" class="mobile-nav-item" data-translate="nav_about">Kuhusu Sisi</a>
+            <a href="departments.html" class="mobile-nav-item" data-translate="nav_departments">Idara</a>
+            <a href="quiz.html" class="mobile-nav-item" data-translate="nav_quiz">Chemsha Bongo</a>
+            <a href="giving.html" class="mobile-nav-item" data-translate="nav_giving">Kutoa</a>
+            <a href="events.html" class="mobile-nav-item" data-translate="nav_services">Ratiba & Matukio</a>
+            <a href="gallery.html" class="mobile-nav-item" data-translate="nav_gallery">Picha</a>
+            <a href="contact.html" class="mobile-nav-item" data-translate="nav_contact">Wasiliana Nasi</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="page-fade-in">
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tag" data-translate="hero_tag">Karibu Manzese SDA Church</span>
+                    <h1 class="hero-title" data-translate="hero_title">Ibada ya Kweli, Upendo wa Kikristo & Matumaini ya Milele</h1>
+                    <p class="hero-desc" data-translate="hero_desc">Sisi ni familia ya waumini wa kanisa la Waadventista wa Sabato Manzese, Dar es Salaam. Tunakualika ujiunge nasi katika kuabudu, kujifunza neno la Mungu, na kuhudumia jamii yetu.</p>
+                    <div class="hero-btns">
+                        <a href="about.html" class="btn btn-primary" data-translate="btn_learn_more">Fahamu Zaidi</a>
+                        <a href="giving.html" class="btn btn-secondary" data-translate="btn_give">Kutoa Zaka & Sadaka</a>
+                    </div>
+                </div>
+
+                <!-- Sabbath Countdown Card -->
+                <div class="sabbath-card" id="sabbathCard">
+                    <div class="sabbath-card-header">
+                        <svg class="sabbath-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <h3 id="sabbathCardTitle" data-translate="sabbath_countdown_title">Maandalizi ya Sabato</h3>
+                    </div>
+                    <div class="sabbath-card-body" id="sabbathCardBody">
+                        <p class="sabbath-prompt" id="sabbathPrompt" data-translate="sabbath_starts_in">Sabato inayofuata inaanza baada ya:</p>
+                        <div class="countdown-timer" id="countdownTimer">
+                            <div class="timer-item">
+                                <span class="timer-num" id="days">00</span>
+                                <span class="timer-label" data-translate="timer_days">Siku</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-num" id="hours">00</span>
+                                <span class="timer-label" data-translate="timer_hours">Saa</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-num" id="minutes">00</span>
+                                <span class="timer-label" data-translate="timer_minutes">Dakika</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-num" id="seconds">00</span>
+                                <span class="timer-label" data-translate="timer_seconds">Sekunde</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements / News Ticker Section -->
+        <section class="announcements-section">
+            <div class="container announcements-container">
+                <div class="announcements-badge" data-translate="announcements_badge">Matangazo</div>
+                <div class="announcements-ticker">
+                    <div class="announcements-list">
+                        <span data-translate="announce_1">Mkutano Mkuu wa Makambi utaanza tarehe 16 Agosti. Karibuni wote!</span>
+                        <span data-translate="announce_2">Kikundi cha Maombi ya Asubuhi kinakutana kila Jumatano saa 11 Asubuhi.</span>
+                        <span data-translate="announce_3">Mazoezi ya Kwaya Kuu yatafanyika Ijumaa saa 11:30 Jioni kabla ya Vespers.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastor's Welcome Section -->
+        <section class="pastor-welcome-section section-padding">
+            <div class="container">
+                <div class="pastor-grid-layout">
+                    <div class="pastor-image-card">
+                        <svg class="pastor-avatar-svg" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="var(--secondary-color)" />
+                            <circle cx="50" cy="40" r="18" fill="var(--gold-color)" />
+                            <path d="M25 78 C 25 60, 75 60, 75 78" fill="var(--gold-color)" />
+                        </svg>
+                        <div class="pastor-badge" data-translate="pastor_badge">Mchungaji wa Mtaa</div>
+                    </div>
+                    <div class="pastor-message-content">
+                        <h2 class="pastor-title" data-translate="pastor_welcome_title">Karibu Katika Nyumba ya Bwana</h2>
+                        <p class="pastor-quote" data-translate="pastor_quote">"Mungu anawapenda sana, na kanisa letu ni sehemu ambapo kila mtafutaji wa ukweli anaweza kupata familia, matumaini, na amani. Tunakukaribisha sana katika ibada zetu za Sabato na vipindi vyote vya juma."</p>
+                        <span class="pastor-name">- Mch. Jackson Mwaipopo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portal Hub Section -->
+        <section class="portal-section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-translate="portal_title">Huduma na Zana za Kiroho</h2>
+                    <p class="section-subtitle" data-translate="portal_subtitle">Gundua kurasa zetu za huduma, ratiba, zana za kutoa, na chemsha bongo ya Biblia</p>
+                    <div class="header-bar"></div>
+                </div>
+
+                <div class="portal-grid">
+                    <!-- About Card -->
+                    <div class="portal-card has-image">
+                        <div class="portal-card-image" style="background-image: url('assets/church_hero.png');"></div>
+                        <div class="portal-card-content">
+                            <h3 data-translate="about_title">Kuhusu Sisi</h3>
+                            <p data-translate="portal_about_desc">Fahamu historia ya kanisa letu, malengo na imani zetu za msingi za Kiadventista, na viongozi wetu.</p>
+                            <a href="about.html" class="portal-link">
+                                <span data-translate="portal_link_read">Soma Zaidi</span>
+                                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Departments Card -->
+                    <div class="portal-card has-image">
+                        <div class="portal-card-image" style="background-image: url('assets/youth_ministry.png');"></div>
+                        <div class="portal-card-content">
+                            <h3 data-translate="dept_title">Idara na Huduma</h3>
+                            <p data-translate="portal_dept_desc">Shule ya Sabato, Vijana (AY), Kwaya mbalimbali, na Huduma za Akina Mama wa kanisa letu.</p>
+                            <a href="departments.html" class="portal-link">
+                                <span data-translate="portal_link_explore">Gundua Idara</span>
+                                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Events Card -->
+                    <div class="portal-card has-image">
+                        <div class="portal-card-image" style="background-image: url('assets/choir_singing.png');"></div>
+                        <div class="portal-card-content">
+                            <h3 data-translate="services_title">Ratiba na Matukio</h3>
+                            <p data-translate="portal_services_desc">Muda wa ibada zetu za wiki na Sabato kuu, na taarifa za matukio yote yanayokuja.</p>
+                            <a href="events.html" class="portal-link">
+                                <span data-translate="portal_link_view">Angalia Ratiba</span>
+                                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Giving Card -->
+                    <div class="portal-card accent-card">
+                        <div class="portal-icon-wrapper">
+                            <svg class="portal-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3 data-translate="giving_title">Kutoa Zaka na Sadaka</h3>
+                        <p data-translate="portal_giving_desc">Kikokotoo cha zaka na sadaka, na njia mbalimbali salama za kutuma malipo (Simu na Benki).</p>
+                        <a href="giving.html" class="portal-link">
+                            <span data-translate="portal_link_give">Toa Sasa</span>
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+
+                    <!-- Quiz Card -->
+                    <div class="portal-card accent-card">
+                        <div class="portal-icon-wrapper">
+                            <svg class="portal-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                <path d="M4 22h16"></path>
+                                <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path>
+                                <path d="M12 2a4 4 0 0 1 4 4v7.5a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-translate="quiz_title">Chemsha Bongo</h3>
+                        <p data-translate="portal_quiz_desc">Pima na uboreshe ufahamu wako wa hadithi na mafundisho ya Biblia kwa maswali yetu mafupi.</p>
+                        <a href="quiz.html" class="portal-link">
+                            <span data-translate="portal_link_quiz">Anza Jaribio</span>
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="portal-card accent-card">
+                        <div class="portal-icon-wrapper">
+                            <svg class="portal-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-translate="contact_title">Wasiliana Nasi</h3>
+                        <p data-translate="portal_contact_desc">Tuma ombi la maombi ya kiroho, ushauri wa kichungaji au maswali yoyote kwa uongozi wa kanisa.</p>
+                        <a href="contact.html" class="portal-link">
+                            <span data-translate="portal_link_contact">Tuma Ujumbe</span>
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs and Spiritual Poll Grid Section -->
+        <section class="interactive-grid-section section-padding bg-light">
+            <div class="container">
+                <div class="interactive-two-column">
+                    <!-- Collapsible FAQs -->
+                    <div class="faq-accordion-wrapper">
+                        <div class="small-header">
+                            <h2 class="faq-section-title" data-translate="faq_title">Maswali Yanayoulizwa Mara kwa Mara</h2>
+                            <div class="header-bar left-align"></div>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span class="faq-question-text" data-translate="faq_q1">Ibada zenu za Sabato huanza saa ngapi?</span>
+                                    <span class="faq-icon-arrow">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p data-translate="faq_a1">Ibada huanza saa 2:00 Asubuhi kwa Shule ya Sabato (kujifunza Biblia) na kufuatiwa na Ibada Kuu ya Mahubiri saa 4:45 Asubuhi. Alasiri tuna vipindi vya vijana na kwaya kuanzia saa 8:00 Alasiri.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span class="faq-question-text" data-translate="faq_q2">Je, ninaweza kuhudhuria ikiwa mimi si mshiriki wa Sabato?</span>
+                                    <span class="faq-icon-arrow">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p data-translate="faq_a2">Ndiyo, kabisa! Kanisa letu lipo wazi kwa ajili ya kila mtu wa dini, dhehebu au imani yoyote. Wageni wote wanakaribishwa na kufurahia upendo wa Kikristo pamoja nasi.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-trigger">
+                                    <span class="faq-question-text" data-translate="faq_q3">Zaka na Sadaka zinatumika kwa kazi gani?</span>
+                                    <span class="faq-icon-arrow">+</span>
+                                </button>
+                                <div class="faq-content">
+                                    <p data-translate="faq_a3">Zaka na Sadaka zinatumika kusaidia kazi ya uinjilisti, matengenezo ya kanisa, kuendesha huduma mbalimbali za idara, na kutoa misaada kwa wajane, mayatima, wagonjwa na wenye shida Manzese.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spiritual Poll Card -->
+                    <div class="poll-card glass-card" id="spiritualPollCard">
+                        <div class="poll-card-header">
+                            <h3 data-translate="poll_title">Kura ya Maoni ya Kiroho</h3>
+                            <p class="poll-question" data-translate="poll_question">Ni somo gani ungependa kujifunza zaidi juma hili?</p>
+                        </div>
+                        
+                        <div class="poll-options" id="pollOptions">
+                            <button class="poll-option-btn" data-vote="unabii">
+                                <span data-translate="poll_opt1">Unabii wa Danieli & Ufunuo</span>
+                            </button>
+                            <button class="poll-option-btn" data-vote="maombi">
+                                <span data-translate="poll_opt2">Jinsi ya Kuomba kwa Ushindi</span>
+                            </button>
+                            <button class="poll-option-btn" data-vote="afya">
+                                <span data-translate="poll_opt3">Afya na Lishe ya Kikristo</span>
+                            </button>
+                            <button class="poll-option-btn" data-vote="familia">
+                                <span data-translate="poll_opt4">Malezi na Afya ya Ndoa</span>
+                            </button>
+                        </div>
+
+                        <!-- Poll Results -->
+                        <div class="poll-results hidden" id="pollResults">
+                            <div class="poll-result-bar">
+                                <div class="poll-result-label">
+                                    <span data-translate="poll_opt1">Unabii wa Danieli & Ufunuo</span>
+                                    <span class="poll-pct" id="pct-unabii">0%</span>
+                                </div>
+                                <div class="poll-bar-bg"><div class="poll-bar-fill" id="fill-unabii"></div></div>
+                            </div>
+                            <div class="poll-result-bar">
+                                <div class="poll-result-label">
+                                    <span data-translate="poll_opt2">Jinsi ya Kuomba kwa Ushindi</span>
+                                    <span class="poll-pct" id="pct-maombi">0%</span>
+                                </div>
+                                <div class="poll-bar-bg"><div class="poll-bar-fill" id="fill-maombi"></div></div>
+                            </div>
+                            <div class="poll-result-bar">
+                                <div class="poll-result-label">
+                                    <span data-translate="poll_opt3">Afya na Lishe ya Kikristo</span>
+                                    <span class="poll-pct" id="pct-afya">0%</span>
+                                </div>
+                                <div class="poll-bar-bg"><div class="poll-bar-fill" id="fill-afya"></div></div>
+                            </div>
+                            <div class="poll-result-bar">
+                                <div class="poll-result-label">
+                                    <span data-translate="poll_opt4">Malezi na Afya ya Ndoa</span>
+                                    <span class="poll-pct" id="pct-familia">0%</span>
+                                </div>
+                                <div class="poll-bar-bg"><div class="poll-bar-fill" id="fill-familia"></div></div>
+                            </div>
+                            <button class="btn btn-secondary btn-block" id="pollResetBtn" data-translate="poll_btn_reset">Piga Kura Tena</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Map Section -->
+        <section class="location-map-section section-padding bg-white">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title" data-translate="location_title">Mahali Tulipo</h2>
+                    <p class="section-subtitle" data-translate="location_subtitle">Karibu utufuate na kuabudu nasi Manzese, Dar es Salaam</p>
+                    <div class="header-bar"></div>
+                </div>
+                
+                <div class="location-grid">
+                    <div class="location-info-card">
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div class="detail-text">
+                                <h4 data-translate="detail_location">Mahali Tulipo</h4>
+                                <p data-translate="detail_address">Manzese, Dar es Salaam (Karibu na Shule ya Msingi Manzese)</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">📞</span>
+                            <div class="detail-text">
+                                <h4 data-translate="detail_phone">Simu ya Mkononi</h4>
+                                <p>+255 712 345 678 | +255 784 987 654</p>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" data-translate="btn_send_message">Tuma Ujumbe</a>
+                    </div>
+                    
+                    <div class="map-wrapper">
+                        <iframe 
+                            class="map-iframe"
+                            src="https://maps.google.com/maps?q=Manzese%20SDA%20Church,%20Dar%20es%20Salaam,%20Tanzania&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verse of the Day Section -->
+        <section class="verse-section">
+            <div class="container">
+                <div class="verse-card glass-card">
+                    <blockquote id="verseText" data-translate="verse_text">"Basi, mkitafuta kwanza ufalme wake, na haki yake; na hayo yote mtaongezewa."</blockquote>
+                    <cite id="verseRef" data-translate="verse_ref">Mathayo 6:33</cite>
+                    <button class="btn-verse-next" id="nextVerseBtn" aria-label="Next Verse" data-translate="btn_next_verse">Neno Lingine ↻</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-row">
+                    <svg class="sda-logo-footer" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="55" r="30" stroke="var(--gold-color)" stroke-width="2" />
+                        <path d="M50 15 V85 M30 38 H70" stroke="var(--gold-color)" stroke-width="4"/>
+                        <path d="M25 65 C35 60 50 63 50 68 C50 63 65 60 75 65 V45 C65 40 50 43 50 48 C50 43 35 40 25 45 Z" fill="var(--primary-color)" stroke="var(--gold-color)" stroke-width="2"/>
+                    </svg>
+                    <h4>MANZESE SDA CHURCH</h4>
+                </div>
+                <p data-translate="footer_desc">Kanisa la Waadventista wa Sabato Manzese tunamwabudu Mungu wa kweli, tukiishi kwa upendo na kutangaza tumaini la kurudi kwa Kristo.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-translate="footer_quick_links">Viungo vya Haraka</h4>
+                <ul>
+                    <li><a href="index.html" data-translate="nav_home">Nyumbani</a></li>
+                    <li><a href="about.html" data-translate="nav_about">Kuhusu Sisi</a></li>
+                    <li><a href="departments.html" data-translate="nav_departments">Idara</a></li>
+                    <li><a href="quiz.html" data-translate="nav_quiz">Chemsha Bongo</a></li>
+                    <li><a href="giving.html" data-translate="nav_giving">Kutoa</a></li>
+                    <li><a href="gallery.html" data-translate="nav_gallery">Picha</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 data-translate="footer_follow_us">Tufuatilie</h4>
+                <div class="social-icons">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="social-icon-btn yt">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163c-.272-1.022-1.074-1.826-2.096-2.101C19.548 3.5 12 3.5 12 3.5s-7.548 0-9.402.562C1.74 4.337.938 5.14.666 6.163.148 8.02.148 12 .148 12s0 3.98.518 5.837c.272 1.022 1.074 1.826 2.096 2.101C4.452 20.5 12 20.5 12 20.5s7.548 0 9.402-.562c1.022-.275 1.824-1.079 2.096-2.101.518-1.857.518-5.837.518-5.837s0-3.98-.518-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon-btn ig">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp" class="social-icon-btn wa">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year">2026</span> Manzese Seventh-day Adventist Church. <span data-translate="footer_rights">Haki zote zimehifadhiwa.</span></p>
+        </div>
+    </footer>
+
+    <!-- Core App JS -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuhusu Sisi - Manzese Seventh-day Adventist Church</title>
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-area">
+                <svg class="sda-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="55" r="30" stroke="var(--gold-color)" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M50 15 V85 M30 38 H70" stroke="var(--gold-color)" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M25 65 C35 60 50 63 50 68 C50 63 65 60 75 65 V45 C65 40 50 43 50 48 C50 43 35 40 25 45 Z" fill="var(--primary-color)" stroke="var(--gold-color)" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M50 15 C55 25 62 30 60 38 C58 45 50 48 50 48 C50 48 42 45 40 38 C38 30 45 25 50 15 Z" fill="url(#flameGrad)" opacity="0.9"/>
+                    <defs>
+                        <linearGradient id="flameGrad" x1="50" y1="15" x2="50" y2="48" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#EEB902" />
+                            <stop offset="100%" stop-color="#F39C12" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="church-title">MANZESE</span>
+                    <span class="church-sub" data-translate="nav_sda">Seventh-day Adventist Church</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-item" data-translate="nav_home">Nyumbani</a>
+                <a href="about.html" class="nav-item" data-translate="nav_about">Kuhusu Sisi</a>
+                <a href="departments.html" class="nav-item" data-translate="nav_departments">Idara</a>
+                <a href="quiz.html" class="nav-item" data-translate="nav_quiz">Chemsha Bongo</a>
+                <a href="giving.html" class="nav-item" data-translate="nav_giving">Kutoa</a>
+                <a href="events.html" class="nav-item" data-translate="nav_services">Ratiba & Matukio</a>
+                <a href="gallery.html" class="nav-item" data-translate="nav_gallery">Picha</a>
+                <a href="contact.html" class="nav-item" data-translate="nav_contact">Wasiliana Nasi</a>
+            </nav>
+
+            <!-- Language Switch & Mobile Toggle -->
+            <div class="header-actions">
+                <button class="lang-btn" id="langBtn" aria-label="Switch Language">
+                    <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    <span id="langText">ENGLISH</span>
+                </button>
+
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Panel (Overlay) -->
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-item" data-translate="nav_home">Nyumbani</a>
+            <a href="about.html" class="mobile-nav-item" data-translate="nav_about">Kuhusu Sisi</a>
+            <a href="departments.html" class="mobile-nav-item" data-translate="nav_departments">Idara</a>
+            <a href="quiz.html" class="mobile-nav-item" data-translate="nav_quiz">Chemsha Bongo</a>
+            <a href="giving.html" class="mobile-nav-item" data-translate="nav_giving">Kutoa</a>
+            <a href="events.html" class="mobile-nav-item" data-translate="nav_services">Ratiba & Matukio</a>
+            <a href="gallery.html" class="mobile-nav-item" data-translate="nav_gallery">Picha</a>
+            <a href="contact.html" class="mobile-nav-item" data-translate="nav_contact">Wasiliana Nasi</a>
+        </nav>
+    </div>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+        <div class="container">
+            <h1 class="subpage-hero-title" data-translate="about_title">Kuhusu Sisi</h1>
+            <p class="subpage-hero-subtitle" data-translate="about_subtitle">Jifunze historia, malengo na imani zetu za kipekee</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-fade-in">
+        <!-- About Section -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-card">
+                        <img src="assets/church_hero.png" alt="Manzese SDA Church Building" class="about-img">
+                        <div class="img-accent-border"></div>
+                    </div>
+                    <div class="about-info">
+                        <h3 data-translate="about_who_we_are">Sisi ni Akina Nani?</h3>
+                        <p data-translate="about_p1">Kanisa la Waadventista wa Sabato Manzese ni jumuiya yenye uchangamfu iliyoko jijini Dar es Salaam, Tanzania. Kama sehemu ya kanisa la ulimwengu lote la Waadventista wa Sabato, tunaamini katika wokovu kupitia Yesu Kristo na tunasubiri kwa hamu kurudi kwake mara ya pili.</p>
+                        <p data-translate="about_p2">Tumejitolea kueneza ujumbe wa injili ya milele (Ujumbe wa Malaika Watatu wa Ufunuo 14) kwa kila mtu katika eneo letu na kote ulimwenguni kupitia upendo, huduma na elimu ya kiroho.</p>
+                        
+                        <div class="beliefs-highlights">
+                            <div class="belief-badge">
+                                <span class="badge-icon">📖</span>
+                                <div class="badge-text">
+                                    <h4 data-translate="belief_bible">Biblia Ndiyo Msingi</h4>
+                                    <p data-translate="belief_bible_desc">Tunaamini Biblia ni neno la Mungu lililoongozwa na roho.</p>
+                                </div>
+                            </div>
+                            <div class="belief-badge">
+                                <span class="badge-icon">🌅</span>
+                                <div class="badge-text">
+                                    <h4 data-translate="belief_sabbath">Sabato Takatifu</h4>
+                                    <p data-translate="belief_sabbath_desc">Tunatenga siku ya saba (Jumamosi) kwa ajili ya mapumziko na ibada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastor/Leadership Section -->
+                <div class="leadership-section">
+                    <h3 class="text-center" data-translate="leadership_title">Uongozi wa Kanisa letu</h3>
+                    <div class="leadership-grid">
+                        <div class="leader-card">
+                            <div class="leader-avatar-wrapper">
+                                <svg class="leader-avatar" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="var(--bg-light)" />
+                                    <circle cx="50" cy="40" r="18" fill="var(--primary-color)" />
+                                    <path d="M25 78 C 25 60, 75 60, 75 78" fill="var(--primary-color)" />
+                                </svg>
+                            </div>
+                            <h4>Mch. Jackson Mwaipopo</h4>
+                            <p class="leader-role" data-translate="role_pastor">Mchungaji wa Mtaa</p>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar-wrapper">
+                                <svg class="leader-avatar" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="var(--bg-light)" />
+                                    <circle cx="50" cy="40" r="18" fill="var(--primary-color)" />
+                                    <path d="M25 78 C 25 60, 75 60, 75 78" fill="var(--primary-color)" />
+                                </svg>
+                            </div>
+                            <h4>Mzee Emmanuel Mrema</h4>
+                            <p class="leader-role" data-translate="role_elder">Mzee wa Kanisa Kiongozi</p>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar-wrapper">
+                                <svg class="leader-avatar" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="var(--bg-light)" />
+                                    <circle cx="50" cy="40" r="18" fill="var(--primary-color)" />
+                                    <path d="M25 78 C 25 60, 75 60, 75 78" fill="var(--primary-color)" />
+                                </svg>
+                            </div>
+                            <h4>Mzee Salum Mwakipesile</h4>
+                            <p class="leader-role" data-translate="role_associate_elder">Msaidizi wa Mzee wa Kanisa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-row">
+                    <svg class="sda-logo-footer" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="55" r="30" stroke="var(--gold-color)" stroke-width="2" />
+                        <path d="M50 15 V85 M30 38 H70" stroke="var(--gold-color)" stroke-width="4"/>
+                        <path d="M25 65 C35 60 50 63 50 68 C50 63 65 60 75 65 V45 C65 40 50 43 50 48 C50 43 35 40 25 45 Z" fill="var(--primary-color)" stroke="var(--gold-color)" stroke-width="2"/>
+                    </svg>
+                    <h4>MANZESE SDA CHURCH</h4>
+                </div>
+                <p data-translate="footer_desc">Kanisa la Waadventista wa Sabato Manzese tunamwabudu Mungu wa kweli, tukiishi kwa upendo na kutangaza tumaini la kurudi kwa Kristo.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-translate="footer_quick_links">Viungo vya Haraka</h4>
+                <ul>
+                    <li><a href="index.html" data-translate="nav_home">Nyumbani</a></li>
+                    <li><a href="about.html" data-translate="nav_about">Kuhusu Sisi</a></li>
+                    <li><a href="departments.html" data-translate="nav_departments">Idara</a></li>
+                    <li><a href="quiz.html" data-translate="nav_quiz">Chemsha Bongo</a></li>
+                    <li><a href="giving.html" data-translate="nav_giving">Kutoa</a></li>
+                    <li><a href="gallery.html" data-translate="nav_gallery">Picha</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-socials">
+                <h4 data-translate="footer_follow_us">Tufuatilie</h4>
+                <div class="social-icons">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="social-icon-btn yt">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163c-.272-1.022-1.074-1.826-2.096-2.101C19.548 3.5 12 3.5 12 3.5s-7.548 0-9.402.562C1.74 4.337.938 5.14.666 6.163.148 8.02.148 12 .148 12s0 3.98.518 5.837c.272 1.022 1.074 1.826 2.096 2.101C4.452 20.5 12 20.5 12 20.5s7.548 0 9.402-.562c1.022-.275 1.824-1.079 2.096-2.101.518-1.857.518-5.837.518-5.837s0-3.98-.518-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon-btn ig">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp" class="social-icon-btn wa">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; <span id="year">2026</span> Manzese Seventh-day Adventist Church. <span data-translate="footer_rights">Haki zote zimehifadhiwa.</span></p>
+        </div>
+    </footer>
+
+    <!-- Core App JS -->
+    <script src="app.js"></script>
+</body>
+</html>
